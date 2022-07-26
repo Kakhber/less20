@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>lesson 20</title>
+		<link rel="stylesheet" href="./lesson 20_files/style.css">
+	</head>
+	<body>
+		<button class="btn" id="open-reg-form">New User</button>
+		<table>
+			<tr>
+			  <th>id</th>
+			  <th>name</th>
+			  <th>surname</th>
+			  <th>email</th>
+			  <th>personal ID</th>
+			  <th>mobile number</th>
+			  <th>zip</th>
+			  <th>gender</th>
+			  <th>Actions</th>
+			</tr>
+			<tr>
+			  <td>8</td>
+			  <td>Nana</td>
+			  <td>Jughashvili</td>
+			  <td>nana.jughashvili@gmail.com</td>
+			  <td>01200000</td>
+			  <td>57787887787</td>
+			  <td>2000</td>
+			  <td>female</td>
+			  <td>
+				<span class="edit_button">Edit</span>
+				<span class="delete_button">Delete</span>
+			  </td>
+			</tr>
+		  </table>
+
+		<section>
+			<div class="modal" id="reg-modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3></h3>
+						<button class="btn delete modal-close">X</button>
+					</div>
+					<div class="modal-body">
+						<form class="form" id="reg" action="https://alinbrg.github.io/front-16--lesson-20/#" method="#" novalidate="">
+							<input id="user_id" type="hidden" placeholder="" value="">
+							<div class="input-field">
+								<label for="user_name">Enter User Name</label>
+								<input type="text" id="user_name" placeholder="user name" required="">
+							</div>
+							<div class="input-field">
+								<label for="user_surname">Enter User Surname</label>
+								<input type="text" id="user_surname" placeholder="user surname" required="">
+							</div>
+
+							<div class="input-field">
+								<label for="user_phone">Enter phone number</label>
+								<input type="number" id="user_phone" placeholder="phone number" required="">
+							</div>
+
+							<div class="input-field">
+								<label for="user_personal-id">Enter personal id</label>
+								<input type="number" id="user_personal-id" placeholder="personal id" required="">
+							</div>
+
+							<div class="input-field">
+								<label for="user_email">Enter Email</label>
+								<input type="email" id="user_email" placeholder="email" required="">
+							</div>
+
+							<div class="input-field">
+								<label for="user_zip-code">Enter zip code</label>
+								<input type="text" id="user_zip-code" placeholder="zip code" required="">
+							</div>
+
+							<div class="input-field">
+								<label for="user_gender">Enter gender</label>
+								<input type="text" id="user_gender" placeholder="gender" required="">
+							</div>
+
+							<div class="input-field">
+								<button class="btn" type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="./lesson 20_files/main.js"></script>
+	</body>
+</html>
